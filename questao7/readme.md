@@ -1,5 +1,7 @@
 SO: Debian Buster (10.7)
+
 Code Editor: Visual Studio Code
+
 gcc version 8.3.0
 
 ---
