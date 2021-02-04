@@ -15,6 +15,9 @@ int calcFibonacci(int x){
 }
 
 int main(){
-    cout << calcFibonacci(20) << endl;
+    cout << "Digite o n-esimo termo da sequencia de fibonacci a ser calculado\n";
+    int x;
+    cin >> x;
+    cout << calcFibonacci(x) << endl;
     return 0;
 }
