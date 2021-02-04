@@ -11,8 +11,9 @@ int pesquisa_linear(int ar[],int tamanoArray, int key){
 
 int main(){
     int vetor[] = {1,4,10,23,56};
-    int tamanhoVetor = 5;
+    int tamanhoVetor = sizeof(vetor) / sizeof(vetor[0]); 
     int chave = 2;
+    cout << tamanhoVetor << endl;
     if (-1 != pesquisa_linear(vetor,tamanhoVetor,chave)){
         cout << "O indice da chave dentro do array informado eh: " << pesquisa_linear(vetor,tamanhoVetor,chave) << endl;
     }else{
