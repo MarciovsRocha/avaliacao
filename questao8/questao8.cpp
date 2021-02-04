@@ -12,7 +12,9 @@ int tamanhoString(string str){
 }
 
 int main(){
-    string myStr = "Minha String";
+    string myStr;
+    cout << "Digite o texto a ser calculado o tamanho:\n";
+    cin >> myStr;
     cout << "tamanho da String: " << tamanhoString(myStr) << endl;
     return 0;
 }
