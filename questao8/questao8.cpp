@@ -5,16 +5,19 @@ using namespace std;
 
 int tamanhoString(string str){
     int cont = 0;
-    for (char& c : str){
+    char* ch = &str[0];
+    while (*ch != '\0'){
         cont++;
+        *ch++;
     }
     return cont;
 }
 
 int main(){
-    string myStr;
-    cout << "Digite o texto a ser calculado o tamanho:\n";
-    cin >> myStr;
+    string myStr; 
+    myStr = "Minha";
+    cout << "tamanho da String: " << tamanhoString(myStr) << endl;
+    myStr = "Minha String";
     cout << "tamanho da String: " << tamanhoString(myStr) << endl;
     return 0;
 }
